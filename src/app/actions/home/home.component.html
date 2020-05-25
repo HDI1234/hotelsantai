@@ -1,0 +1,28 @@
+<div>
+  <h1>Rooms</h1>
+  <button type="button" [routerLink]="['/actions/create/']">Create new room</button>
+  <table>
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Room Name</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let room of rooms">
+              <td>{{room.id}}</td>
+              <td>{{room.type}}</td>
+              <td>{{room.description}}</td>
+              <td>{{room.availability}}</td>
+              <td>
+                  <button type="button" [routerLink]="['/actions/update/', room.id]">Update</button>
+                  <button type="button" (click)="ActionsService.delete(room.id)">Remove</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

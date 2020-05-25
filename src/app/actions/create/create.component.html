@@ -1,0 +1,22 @@
+<div>
+  <h1>Create Product</h1>
+  <form [formGroup]="roomForm" (ngSubmit)="submitForm()" novalidate>
+      <div class="form-group">
+          <label>Type</label>
+          <input type="text" formControlName="type" class="form-control" maxlength="20">
+      </div>
+      <div class="form-group">
+          <label>Description</label>
+          <textarea class="form-control" formControlName="description" rows="3" maxlength="50"></textarea>
+      </div>
+      <div class="form-group">
+          <label>Price</label>
+          <input type="text" formControlName="price" class="form-control">
+      </div>
+      <div class="form-group">
+          <label>Availability</label>
+          <input type="text" formControlName="availability" class="form-control">
+      </div>
+      <button type="submit">Submit</button>
+  </form>
+</div>
