@@ -1,12 +1,6 @@
-# DayPilot UI Builder Template Project
+# Capstone Hotel Reservation System Project CSC406
 
-This is a template project generated using [DayPilot UI Builder](https://builder.daypilot.org/).
-
-## Versions
-
-This project is based on [Angular CLI](https://github.com/angular/angular-cli) version 9.1.
-
-This project includes a trial version of DayPilot Pro for JavaScript.
+This is a project developed by students of CSC406
 
 ## License
 
@@ -16,10 +10,11 @@ You can use the the project if you are a licensed user of DayPilot Pro for JavaS
 
 ## Project Initialization
 
-Run `npm install` to download all dependencies.
+Run `npm install` in frontend folder to download all dependencies.
 
 ## Running the Project
 
+Run `php -S 127.0.0.1:8090 -t [Backend folder path]` to run api server (Remove square brackets).
 Run `npm run start` to start a development server at `http://localhost:4200/`.
 
 ## Build
