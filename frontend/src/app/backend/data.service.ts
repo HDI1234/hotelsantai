@@ -10,7 +10,7 @@ export class DataService {
 
   user: any;
 
-  constructor(private http : HttpClient, private router: Router){
+  constructor(private http: HttpClient, private router: Router){
   }
 
   getUser(): Observable<any> {
